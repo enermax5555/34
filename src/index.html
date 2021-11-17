@@ -10,17 +10,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <style>
-  .image :active {
+  .active {
 	transform: scale(2.0);
   }
   </style>
   <body>
     <div class="main">
-	<div class="image"> 
-	<img src="images/favicon.ico"> 
+	
+	<div class="image" id="addPlease" onclick="AddClass()">
+	<div class="profile">
+	<img src="images/favicon.ico">
+	</div>
 	</div>
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
   </body>
+  <script> 
+  function AddClass() {
+  let element = document.getElementById("addPlease");
+  element.classList.add("active");
+  }
+  </script>
 </html>
